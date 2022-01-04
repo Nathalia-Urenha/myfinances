@@ -7,6 +7,31 @@ createServer({
   models:{
     transaction: Model,
   },
+
+  seeds(server){
+    server.db.loadData({
+      transactions: [
+        {
+          id: 1,
+          title: 'Salário Estágio',
+          type: 'deposit',
+          category: 'Renda Mensal',
+          amount: 2500,
+          createdAt: new Date('2022-01-07 09:00:00'),
+        },
+        {
+          id: 2,
+          title: 'Aluguel',
+          type: 'withdraw',
+          category: 'Gasto Mensal',
+          amount: 200,
+          createdAt: new Date('2022-01-10 18:00:00'),
+        },
+
+      ],
+    });
+  },
+
   routes(){
     this.namespace = 'api';
 
