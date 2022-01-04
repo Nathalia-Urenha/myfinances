@@ -13,10 +13,10 @@ createServer({
       transactions: [
         {
           id: 1,
-          title: 'Salário Estágio',
+          title: 'Desenvolvimento de Website',
           type: 'deposit',
           category: 'Renda Mensal',
-          amount: 2500,
+          amount: 6000,
           createdAt: new Date('2022-01-07 09:00:00'),
         },
         {
@@ -24,7 +24,7 @@ createServer({
           title: 'Aluguel',
           type: 'withdraw',
           category: 'Gasto Mensal',
-          amount: 200,
+          amount: 500,
           createdAt: new Date('2022-01-10 18:00:00'),
         },
 
